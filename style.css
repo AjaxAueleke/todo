@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+body, * {
+    margin : 0;
+    box-sizing: border-box;
+    padding : 0;
+    text-align: center;
+}
+h1 {
+    margin: 5vh 0 5vh 0;;
+}
+.form {
+    margin: auto;
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+input[type="text"] {
+    border : none;
+    border-bottom: 2px solid grey;
+    width : 50%;
+    font-size: 3rem;
+    text-align: left;
+    outline: none;
+}
+div.form button {
+    width : 100px;
+    height : 50px;
+    border : none;
+    padding : 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+button[onclick="addItem()"] {
+    color : white;
+    background-color: #008CBA;
+}
+button[onclick="delItem()"] {
+    color : white;
+    background-color: #f44336;
+}
+#list {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    justify-content: space-around;
+}
+.list {
+    margin: 10px 10px 10px 10px !important;
+    background-color: yellow;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
